@@ -1,0 +1,86 @@
+version: '3.8'
+
+# ─────────────────────────────────────────
+# Development overrides — hot reload via nodemon
+# ─────────────────────────────────────────
+
+services:
+  auth-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/auth-service:/app
+      - /app/node_modules
+
+  user-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/user-service:/app
+      - /app/node_modules
+
+  team-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/team-service:/app
+      - /app/node_modules
+
+  match-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/match-service:/app
+      - /app/node_modules
+
+  performance-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/performance-service:/app
+      - /app/node_modules
+
+  financial-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/financial-service:/app
+      - /app/node_modules
+
+  notification-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/notification-service:/app
+      - /app/node_modules
+
+  file-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/file-service:/app
+      - /app/node_modules
+
+  attendance-service:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./services/attendance-service:/app
+      - /app/node_modules
+
+  api-gateway:
+    build:
+      target: development
+    command: npm run dev
+    volumes:
+      - ./api-gateway:/app
+      - /app/node_modules

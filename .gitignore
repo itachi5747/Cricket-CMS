@@ -1,0 +1,27 @@
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker volumes
+postgres_data/
+mongo_data/
+redis_data/
+rabbitmq_data/
+minio_data/
+
+# Generated reports
+uploads/
+generated/
