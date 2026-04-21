@@ -21,7 +21,15 @@ const seed = async () => {
   console.log('🏏 Cricket CMS — Database Seeder\n');
 
   try {
+    // Clean existing data first to avoid FK conflicts
     await client.query('BEGIN');
+    await client.query('DELETE FROM password_reset_tokens');
+    await client.query('DELETE FROM refresh_tokens');
+    await client.query('DELETE FROM players');
+    await client.query('DELETE FROM staff');
+    await client.query('DELETE FROM profiles');
+    await client.query('DELETE FROM users');
+    console.log('  🧹 Cleared existing data\n');
 
     // ── 1. Chairman (admin) ──
     const chairmanId = uuidv4();
@@ -33,6 +41,7 @@ const seed = async () => {
        ON CONFLICT (email) DO NOTHING`,
       [chairmanId, 'chairman_admin', 'chairman@cricket.com', chairmanHash, 'Chairman']
     );
+    console.log('  ✅ Chairman: chairman@cricket.com / Chairman@123!');
 
     await client.query(
       `INSERT INTO profiles (id, user_id, full_name, contact_number)

@@ -14,7 +14,9 @@ yarn-error.log*
 .vscode/
 *.swp
 *.swo
-
+HOW_TO_PUSH_TO_GITHUB.md
+postman_collection.json
+Cricket_CMS_API_Gateway.postman_collection.json
 # Docker volumes
 postgres_data/
 mongo_data/
