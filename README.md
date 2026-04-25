@@ -183,17 +183,19 @@ All routes prefixed with `/api/v1/`
 ## Build Phases
 
 - ✅ **Phase 0** — Monorepo, Docker infra, shared library *(complete)*
-- 🔲 **Phase 1** — Auth Service
-- 🔲 **Phase 2** — User Management Service
-- 🔲 **Phase 3** — Team & Squad Service
-- 🔲 **Phase 4** — Match Management Service
-- 🔲 **Phase 5** — Performance Tracking Service
-- 🔲 **Phase 6** — Financial Service
-- 🔲 **Phase 7** — Notification Service
-- 🔲 **Phase 8** — Attendance Service
-- 🔲 **Phase 9** — File Management Service
-- 🔲 **Phase 10** — API Gateway
-- 🔲 **Phase 11** — Hardening & Observability
+- ✅ **Phase 1** — Auth Service
+- ✅ **Phase 2** — User Management Service
+- ✅ **Phase 3** — Team & Squad Service
+- ✅ **Phase 4** — Match Management Service
+- ✅ **Phase 5** — Performance Tracking Service
+- ✅ **Phase 6** — Financial Service
+- ✅ **Phase 7** — Notification Service
+- ✅ **Phase 8** — Attendance Service
+- ✅ **Phase 9** — File Management Service
+- ✅ **Phase 10** — API Gateway
+- ✅ **Phase 11** — Hardening & Observability
+
+- ✅ **Run all services** — `npm run dev` from the root directory of the backend. For more info, read `docs/SETUP.md`.
 
 ---
 
@@ -253,6 +255,6 @@ Private — All rights reserved
 
 ---
 
-## ⚠️ Project Status
+## ✅ Project Status
 
-> **This project is still in progress.**
+> **Backend completed.**
