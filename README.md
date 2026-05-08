@@ -29,6 +29,13 @@ A microservice backend built with Node.js, Express, PostgreSQL, MongoDB, RabbitM
    └──────────┘        └──────────┘
 ```
 
+
+## High level Architecture Diagram
+
+![Architecture Diagram](./architecture_diagram/cricket_cms_architecture.svg)
+
+
+
 ## Services
 
 | Service | Port | Database |
