@@ -1,4 +1,4 @@
-# 🏏 Cricket Management System — Backend
+# 🏏 Cricket Management System — Distributed Backend
 
 A microservice backend built with Node.js, Express, PostgreSQL, MongoDB, RabbitMQ, and Redis.
 
